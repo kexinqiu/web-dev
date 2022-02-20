@@ -1,7 +1,11 @@
+#left-search-input-icon{
+    color: white;
+}
+
 
 #search-input::placeholder{
     padding-left: 40px;
-    color: rgb(110,118,125);
+    color: white;
     /*background-image: url('images/search.png');*/
     /*background-repeat: no-repeat;*/
 }
@@ -47,10 +51,10 @@
 .wd-search-input{
     width:90%;
     height:35px;
+    background-color: rgb(110, 118, 125);
 }
 
 .wd-rounded-corners-all-around {
-
     border-radius: 50px;
     border-width: 1px;
 }
@@ -127,8 +131,22 @@
 }
 
 .wd-button-tweet{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-style: none;
+    font-size: 13px;
+    height: 30px;
+    -webkit-border-radius:20px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.wd-button-tweet-left{
     background-color: #0d6efd;
     color: white;
+    font-weight: bold;
     border-style: none;
     font-size: 13px;
     height: 30px;
@@ -222,7 +240,7 @@
 .wd-title{
     font-weight: bold;
     font-size: 15px;
-    color: black;
+    color: white;
 }
 
 .wd-font-color-grey{
@@ -238,7 +256,7 @@
 }
 
 .wd-text{
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -255,4 +273,54 @@
     position: absolute;
     left: 16px;
     top:15px;
+    color: white !important;
+}
+
+.list-group-item{
+    background-color: black !important;
+    color: white !important;
+
+}
+
+.nav-tabs{
+    border-bottom-style: hidden !important;
+}
+
+.nav-link {
+    color: rgb(110,118,125) !important;
+}
+
+.nav-link-highlight{
+    color: white !important;
+    font-weight: bold;
+
+}
+
+.wd-border-bt-line{
+    border-bottom-style: solid;
+    border-bottom-color: #0d6efd;
+}
+
+.wd-content-border{
+    border-width: 1px;
+    border-color: rgb(110,118,125);
+    border-style: solid;
+}
+
+.wd-right-bg-color{
+    background-color: rgb(110,118,125) !important;
+}
+
+.wd-right-border-rounded{
+    border-radius: 20px !important;
+}
+
+.wd-border-bt{
+    border-bottom-style: solid !important;
+    border-bottom-color: rgb(110,118,125) !important;
+    border-bottom-width: 1px;
+}
+
+.wd-show-more-link{
+    text-decoration:none;
 }

@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <title>Explore</title>
     <link href="explore.css" rel="stylesheet"/>
-    <link href="../vendors/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../vendors/bootstrap/bootstrap.min.css" rel="stylesheet"/>
 <!--    <link href="../vendors/fontawesome/all.css" rel="stylesheet"/>-->
 <!--    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">-->
     <script src="https://kit.fontawesome.com/75983dbee2.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="wd-bg-color-black" >
 
-<div class="container">
+<div class="container ">
     <div class="row justify-content-center">
 
-        <div class="col-xl-2 col-lg-1 col-2">
+        <div class="col-xl-2 col-lg-1 col-2 pe-3">
             <ul class="list-group wd-margin-top">
 
-                <a class="list-group-item" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="list-group-item " href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a class="list-group-item" href="#"><i class="fa-solid fa-house"></i><span class="wd-font-size d-none d-xl-inline">  Home</span></a>
-                <a class="list-group-item active" href="#"><i class="fa-solid fa-hashtag"></i><span class="wd-font-size d-none d-xl-inline">  Explore</span></a>
+                <a class="list-group-item " href="#"><i class="fa-solid fa-hashtag"></i><span class="wd-font-size d-none d-xl-inline">  Explore</span></a>
                 <a class="list-group-item" href="#"><i class="fa-solid fa-bell"></i><span class="wd-font-size d-none d-xl-inline">  Notifications</span></a>
                 <a class="list-group-item" href="#"><i class="fa-solid fa-envelope"></i><span class="wd-font-size d-none d-xl-inline">  Message</span></a>
                 <a class="list-group-item" href="#"><i class="fa-solid fa-bookmark"></i><span class="wd-font-size d-none d-xl-inline">  Bookmarks</span></a>
@@ -27,21 +27,21 @@
                 <a class="list-group-item" href="#"><i class="fa-solid fa-user"></i><span class="wd-font-size d-none d-xl-inline">  Profile</span></a>
                 <a class="list-group-item" href="#"><i class="fa-solid fa-caret-down"></i><span class="wd-font-size d-none d-xl-inline">  More</span></a>
 
-            <button  class=" wd-margin-top wd-button-tweet">Tweet</button>
+            <button  class=" wd-margin-top wd-button-tweet-left">Tweet</button>
             </ul>
         </div>
 
-        <div class="col-xl-7 col-lg-7 col-10">
+        <div class="col-xl-7 col-lg-7 col-10 wd-content-border ps-0 pe-0">
             <div class="wd-margin-top position-relative">
                 <i class="fa-solid fa-magnifying-glass wd-position-search-icon"></i>
                 <input id="search-input" class="wd-search-input wd-rounded-corners-all-around " type="text" placeholder="Search Tuiter">
-                <a href="explore-settings.html"><i class="fa-solid fa-gear fa-2x wd-search-gear"></i></a>
+                <a href="explore-settings.html" id="left-search-input-icon"><i class="fa-solid fa-gear fa-2x wd-search-gear"></i></a>
             </div>
 
 
-            <ul class="nav nav-tabs wd-grid-heading-bar wd-padding-top">
+            <ul class="nav nav-tabs wd-grid-heading-bar wd-padding-top ">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">For you</a>
+                    <a class="nav-link" href="#">For you</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Trending</a>
@@ -52,13 +52,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" >Sports</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link d-none d-md-block" href="#" >Entertainment</a>
+                <li class="nav-item wd-border-bt-line">
+                    <a class="nav-link d-none d-md-block nav-link-highlight" href="#" >Entertainment</a>
+
                 </li>
             </ul>
 
-       <div class="wd-content wd-padding-top position-relative">
-            <div class="wd-img-text position-relative">
+       <div class="wd-content position-relative pt-1 ">
+            <div class="wd-img-text position-relative wd-border-bt">
                 <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" class="wd-content-img">
                 <div>
                     <span class="d-none d-xxl-block wd-content-img-overlay-text-xxl">SpaceX's Starship</span>
@@ -71,7 +72,7 @@
             </div>
 
                <ul class="list-group">
-                   <li class="list-group-item pe-2">
+                   <li class="list-group-item pe-2 wd-border-bt">
                        <div class="wd-content-text">
                            <div class="wd-float-left pb-2">
                                <div class="wd-topic">Web Development </div>
@@ -85,7 +86,7 @@
                        </div>
                    </li>
 
-                   <li class="list-group-item pe-2">
+                   <li class="list-group-item pe-2 wd-border-bt">
                        <div class="wd-content-text">
                            <div class="wd-float-left pb-2">
                                <div class="wd-title">JavaScript <i class="fa-solid fa-circle-check"></i><span class="wd-font-color-grey"> - 2h</span></div>
@@ -99,7 +100,7 @@
                        </div>
                    </li>
 
-                   <li class="list-group-item pe-2">
+                   <li class="list-group-item pe-2 wd-border-bt">
                        <div class="wd-content-text">
                            <div class="wd-float-left pb-2">
                                <div class="wd-topic">Web Development </div>
@@ -137,10 +138,10 @@
        </div>
        </div>
 
-        <div class="col-xl-3 col-lg-4  d-none d-lg-block">
-            <ul class="list-group wd-margin-top">
-                <li class="list-group-item wd-right-bar-font-border wd-right-bar-width">Who to follow</li>
-                <li class="list-group-item ps-0">
+        <div class="col-xl-3 col-lg-4  d-none d-lg-block ps-3">
+            <ul class="list-group wd-margin-top wd-right-border-rounded">
+                <li class="list-group-item wd-right-bar-font-border wd-right-bar-width wd-right-bg-color">Who to follow</li>
+                <li class="list-group-item ps-0 wd-right-bg-color">
                     <div class="wd-right-bar-float-left">
                         <img class="wd-right-bar-logo"  src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png"/>
                     </div>
@@ -152,7 +153,7 @@
                         <button  class="wd-button-tweet wd-right-bar-btn">Follow</button>
                     </div>
                 </li>
-                <li class="list-group-item ps-1">
+                <li class="list-group-item ps-1 wd-right-bg-color">
                     <div class="wd-right-bar-float-left">
                         <img class="wd-right-bar-logo-smaller wd-right-bar-logo-size"  src="https://yt3.ggpht.com/ytc/AKedOLQf6ky9m_48B2ElJExS53ydwnVl5XBwPfdYeOe1=s900-c-k-c0x00ffffff-no-rj"/>
                     </div>
@@ -164,7 +165,7 @@
                         <button  class="wd-button-tweet wd-right-bar-btn">Follow</button>
                     </div>
                 </li>
-                <li class="list-group-item ps-0">
+                <li class="list-group-item ps-0 wd-right-bg-color">
                     <div class="wd-right-bar-float-left">
                         <img class="wd-right-bar-logo"  src="https://i.pinimg.com/originals/40/14/56/401456bfee498a081686e157d894d0e8.png"/>
                     </div>
@@ -176,7 +177,7 @@
                         <button  class="wd-button-tweet wd-right-bar-btn">Follow</button>
                     </div>
                 </li>
-                <li class="list-group-item ps-0">
+                <li class="list-group-item ps-0 wd-right-bg-color">
                     <div class="wd-right-bar-float-left">
                         <img class="wd-right-bar-logo"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"/>
                     </div>
@@ -188,7 +189,7 @@
                         <button  class="wd-button-tweet wd-right-bar-btn">Follow</button>
                     </div>
                 </li>
-                <li class="list-group-item ps-0 ">
+                <li class="list-group-item ps-0 wd-right-bg-color">
                     <div class="wd-right-bar-float-left">
                         <img class="wd-right-bar-logo"  src="https://c0.klipartz.com/pngpicture/272/423/gratis-png-2017-tesla-model-x-tesla-motors-iphone-x-car-tesla-thumbnail.png"/>
                     </div>
@@ -199,6 +200,9 @@
                     <div class="wd-right-bar-float-right">
                         <button  class="wd-button-tweet wd-right-bar-btn">Follow</button>
                     </div>
+                </li>
+                <li class="list-group-item wd-right-bar-font-border wd-right-bar-width wd-right-bg-color">
+                <a href="#" class="wd-show-more-link" >Show more</a>
                 </li>
             </ul>
         </div>
