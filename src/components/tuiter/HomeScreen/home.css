@@ -337,4 +337,14 @@
 .wd-bg-color-card{
     background-color: black !important;
 }
+.wd-postlist{
+    width:100%;
+    border-style: solid;
+    border-color: dimgrey;
+    border-width: 1px;
+    border-radius: 30px;
+}
 
+.wd-link_noline{
+    text-decoration:none;
+}
