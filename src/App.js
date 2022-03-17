@@ -2,7 +2,7 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 // import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Labs from "./components/labs/index";
 import HelloWorld from "./components//hello-world";

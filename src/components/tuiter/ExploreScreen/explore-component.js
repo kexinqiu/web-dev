@@ -22,7 +22,7 @@ const ExploreComponent = ({active = 'For you'}) => {
 
 
             <div className="position-relative mb-2">
-                <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" className="card-img-top" />
+                <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" className="card-img-top" alt=""/>
                 <div className="position-absolute wd-img-title-pos">
                     <span className="wd-img-title-font">SpaceX's Starship</span>
                 </div>

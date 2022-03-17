@@ -1,6 +1,5 @@
 import React from "react";
 import NavigationSidebar from "../NavigationSidebar/navigation-sidebar";
-import WhoToFollowList from "../WhoToFollowList/who-to-follow-list";
 import PostSummaryList from "../PostSummaryList/post-summary-list"
 import PostList from "./post-list";
 

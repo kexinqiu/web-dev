@@ -10,7 +10,7 @@ const WhoToFollowListItem = (
          
          <li className="list-group-item ps-0 ">
                 <div className="wd-right-bar-float-left">
-                        <img className="rounded-circle float-start" src={who.avatarIcon} width="50px" height="50px"/>
+                        <img className="rounded-circle float-start" src={who.avatarIcon}  alt="" width="50px" height="50px"/>
                 </div>
                 <div class="wd-right-bar-float-left ">
                         <div className="wd-right-bar-title ">{who.userName} <i className="fa-solid fa-circle-check"></i></div>

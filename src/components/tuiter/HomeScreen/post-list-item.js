@@ -19,7 +19,7 @@ const PostListItem = (
     return(
         <>
             <div className="wd-grid-image-left">
-                <img className="wd-avatar-image" src={homepost.profile}/>
+                <img className="wd-avatar-image" src={homepost.profile} alt=""/>
             </div>
 
             <div className="wd-tuit">
@@ -55,16 +55,16 @@ const PostListItem = (
 
                     <div className="wd-grid-icon-num-bottom">
                         <div className="wd-grid-icon-num-bottom-1">
-                            <a className="wd-link_noline" href="#" ><img src="../images/message.png"/><span className="wd-grid-icon-num-bottom-num">{homepost.message}</span></a>
+                            <a className="wd-link_noline" href="#" ><img src="../images/message.png" alt=""/><span className="wd-grid-icon-num-bottom-num">{homepost.message}</span></a>
                         </div>
                         <div className="wd-grid-icon-num-bottom-1">
-                            <a className="wd-link_noline" href="#" ><img src="../images/forward.png"/><span className="wd-grid-icon-num-bottom-num">{homepost.forward}</span></a>
+                            <a className="wd-link_noline" href="#" ><img src="../images/forward.png" alt=""/><span className="wd-grid-icon-num-bottom-num">{homepost.forward}</span></a>
                         </div>
                         <div className="wd-grid-icon-num-bottom-1">
                             <i className="fa-brands fa-gratipay" ></i><a className="wd-link_noline" href="#" ><span className="wd-grid-icon-num-bottom-num">{homepost.love}</span></a>
                         </div>
                         <div className="wd-grid-icon-num-bottom-1">
-                            <a className="wd-link_noline" href="#" ><img src="../images/share.png"/></a>
+                            <a className="wd-link_noline" href="#" ><img src="../images/share.png" alt=""/></a>
                         </div>
                     </div>
                 </div>
