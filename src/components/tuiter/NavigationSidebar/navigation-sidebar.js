@@ -2,9 +2,12 @@
 import NavigationItem from "./NavigationItem";
 import React from "react";
 import navigations from "./navigation.json";
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import { useSelector } from "react-redux";
 
-const NavigationSidebar = ({active}) => {
+const NavigationSidebar = () => {
+    const { active } = useSelector((state) => state.nav);
+
     return(
         <>
             <div className="list-group pt-2">
@@ -18,7 +21,7 @@ const NavigationSidebar = ({active}) => {
             <div className="d-grid mt-2">
                 <a href="tweet.html"
                    className="btn btn-primary btn-block rounded-pill">
-                    Tweet</a>
+                    Tuit</a>
             </div>
         </>
     );
