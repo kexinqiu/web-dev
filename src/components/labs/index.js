@@ -11,8 +11,8 @@ const Labs = () => {
         <>
             <h1>Labs!</h1>
             <Link to="/hello">Hello</Link> |
-            <Link to="/tuiter/home">Home</Link> |
-            <Link to="/tuiter/explore">Explore</Link>
+            <Link to="/tuiter">Tuiter</Link> |
+
 
             <ReduxExamples/>
             {/*<TodoList />*/}
