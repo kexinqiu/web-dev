@@ -76,8 +76,6 @@ const Todos = () => {
                             className="btn btn-primary">
                         Create New Todo
                     </button>
-
-
                 </li>
             </ul>
         </>
