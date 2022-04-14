@@ -2,11 +2,10 @@ import axios from 'axios';
 // const TUITS_API = 'https://cs5610server.herokuapp.com/api/tuits';
 //const TUITS_API = 'http://localhost:4000/api/tuits';
 //const API_BASE = process.env.REACT_APP_API_BASE;
-// const API_BASE = 'https://cs5610server.herokuapp.com/api' || 'http://localhost:4000/api';
-// const TUITS_API = `${API_BASE}/tuits`;
-
-const API_BASE =  'http://localhost:4000/api';
+const API_BASE = 'https://cs5610server.herokuapp.com/api' || 'http://localhost:4000/api';
 const TUITS_API = `${API_BASE}/tuits`;
+
+
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
