@@ -3,9 +3,25 @@ import {updateTuit} from "../../actions/tuits-actions"
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
+
     const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
+        if(tuit.liked){
+            updateTuit(dispatch, {
+                ...tuit,
+                liked: !tuit.liked,
+                stats: {...tuit.stats, likes: Number(tuit.stats.likes) - 1}
+            });
+        }else {
+            updateTuit(dispatch, {
+                ...tuit,
+                liked: !tuit.liked,
+                stats: {...tuit.stats, likes: Number(tuit.stats.likes) + 1}
+            });
+        }
+        // dispatch({type: 'like-tuit', tuit});
     };
+
+
     return (
     <>
         <div className="wd-grid-icon-num-bottom">
@@ -16,7 +32,7 @@ const TuitStats = ({tuit}) => {
                 <i className="fa-solid fa-retweet"></i><span> {tuit.stats.retuits}</span>
             </div>
             <div className="wd-grid-icon-num-bottom-1">
-                     <span onClick={()=>updateTuit(dispatch, tuit)}>
+                     <span onClick={likeTuit}>
                         {
                             tuit.liked &&
                             <i className="fas fa-heart me-1"

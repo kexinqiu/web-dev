@@ -9,22 +9,25 @@ import {
 const tuitsReducer = (state = [], action) => {
     switch (action.type) {
 
+        // case UPDATE_TUIT:
+        //     return state.map(tuit => {
+        //         if(tuit._id === action.tuit._id) {
+        //             if(tuit.liked === true) {
+        //                 tuit.liked = false;
+        //                 tuit.stats.likes--;
+        //             } else {
+        //                 tuit.liked = true;
+        //                 tuit.stats.likes++;
+        //             }
+        //             return tuit;
+        //         } else {
+        //             return tuit;
+        //         }
+        //     });
         case UPDATE_TUIT:
-            return state.map(tuit => {
-                if(tuit._id === action.tuit._id) {
-                    if(tuit.liked === true) {
-                        tuit.liked = false;
-                        tuit.stats.likes--;
-                    } else {
-                        tuit.liked = true;
-                        tuit.stats.likes++;
-                    }
-                    return tuit;
-                } else {
-                    return tuit;
-                }
-            });
-
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                    action.tuit : tuit);
         case CREATE_TUIT:
             return [
                 ...state,
